@@ -47,3 +47,23 @@ body {
 .calculator-keys button:active {
     background-color: #d9d9d9;
 }
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
